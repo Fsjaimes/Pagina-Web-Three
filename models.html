@@ -1,0 +1,84 @@
+<!-- <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Modelos 3D</title>
+        <style>
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+                display: flex;
+                flex-direction: column;
+                height: 100vh;
+            }
+            #container {
+                width: 100%;
+                flex: 1; 
+            }
+            button {
+                margin: 20px;
+                padding: 10px 20px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div id="container"></div> 
+
+        <button onclick="window.location.href='index.html'">Volver</button>
+
+        <script type="module" src="main.js"></script> 
+    </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos 3D</title>
+    <link rel="icon" href="img/logo-pw.png" type="image/png">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="menu-btn">
+        <i class="fas fa-bars fa-2x"></i>
+    </div>
+
+    <div class="container">
+        <nav class="nav-main">
+            <img src="img/logo-pw.png" alt="TechNews Logo" class="nav-brand">
+            <ul class="nav-menu">
+                <li><a href="#">Hardware</a></li>
+                <li><a href="#">Equipos Armados</a></li>
+                <li><a href="#">Precios</a></li>
+                <li><a href="#">Contactanos</a></li>
+                <li><a href="#">Más información</a></li>
+            </ul>
+            <ul class="nav-menu-right">
+                <li><a href="#"><i class="fas fa-search"></i></a></li>
+                <li><button onclick="window.location.href='index.html'" class="btn">Volver</button></li> <!-- Botón para volver -->
+            </ul>
+        </nav>
+        <hr>
+        <div id="3d-model-container"></div>
+    </div>
+
+    <script src="https://unpkg.com/@google/model-viewer@latest/dist/model-viewer.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script type="module" src="main.js"></script>
+</body>
+</html>

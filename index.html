@@ -1,0 +1,216 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script type="module" src="/main.js"></script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos 3D</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        footer {
+            margin-top: 20px;
+            text-align: center;
+        }
+        button {
+            margin: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Modelos 3D de Componentes</h1>
+    <p>A continuación se presentan los modelos 3D de RAM y una placa madre.</p>
+
+    <button onclick="window.location.href='models.html'">Ver Modelos 3D</button> 
+
+    <p>Modelos disponibles: RAM DDR4, RAM DDR3 y Placa Madre.</p>
+    <p>Gracias por visitar nuestra página.</p>
+
+    <footer>
+        <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Web</title>
+    <link rel="icon" href="img/logo-pw.png" type="image/png">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&family=New+Amsterdam&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="menu-btn">
+        <i class="fas fa-bars fa-2x"></i>
+    </div>
+
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="nav-main">
+            <!-- Brand -->
+            <img src="img/logo-pw.png" alt="TechNews Logo" class="nav-brand">
+            <!-- Left Nav -->
+            <ul class="nav-menu">
+                <li><a href="#">Hardware</a></li>
+                <li><a href="#">Equipos Armados</a></li>
+                <li><a href="#">Precios</a></li>
+                <li><a href="#">Contactanos</a></li>
+                <li><a href="#">Más información</a></li>
+            </ul>
+
+            <!-- Right Nav -->
+            <ul class="nav-menu-right">
+                <li><a href="#"><i class="fas fa-search"></i></a></li>
+            </ul>
+        </nav>
+        <hr>
+
+        <!-- SHOWCASE -->
+        <header class="showcase">
+            <h2>¿Estás buscando el mejor hardware para tu computadora?</h2>
+            <p>Encuentra componentes de alta calidad para optimizar el rendimiento de tu computadora. Tenemos procesadores, tarjetas gráficas y más, 
+            todo con garantía de confiabilidad y rendimiento superior.</p>
+            <a href="#" class="btn">¡Conocenos! <i class="fas fa-chevron-right"></i></a>
+        </header>
+
+        <!-- <button onclick="window.location.href='models.html'">Ver Modelos 3D</button>  -->
+
+        <!-- NEWS CARDS -->
+        <div class="news-cards">
+            <div class="container">
+                <img src="img/ram.jpg" alt="" />
+                <h3>Memoria RAM</h3>
+                <p>Mejora la velocidad y rendimiento de tu PC con nuestra memoria RAM de alta calidad. ¡No esperes más, potencia tu equipo hoy mismo!</p>
+                    <a style="cursor: pointer;" onclick="window.location.href='models.html'">Ver más <i class="fas fa-angle-double-right"></i></a>
+                    <div id="3d-model-container" style="display: none;"></div>
+            </div>
+            <div>
+                <img src="img/procesador.jpg" alt="" />
+                <h3>Procesador (CPU)</h3>
+                <p>Acelera el rendimiento de tu computadora con los mejores procesadores del mercado. ¡Haz que tu equipo funcione al máximo, cómpralo ahora!</p>
+                <a href="#">Ver más <i class="fas fa-angle-double-right"></i></a>
+            </div>
+            <div>
+                <img src="img/SSD.jpg" alt="" />
+                <h3>Unidad de Estado Sólido (SSD)</h3>
+                <p>Disfruta de una velocidad impresionante con una unidad SSD. ¡Arranca y carga tus aplicaciones al instante, adquiere la tuya ahora!</p>
+                <a href="#">Ver más <i class="fas fa-angle-double-right"></i></a>
+            </div>
+            <div>
+                <img src="img/fuente-de-poder.jpg" alt="" />
+                <h3>Fuente de Poder</h3>
+                <p>Asegura la estabilidad de tu sistema con una fuente de poder robusta y eficiente. ¡Protege tu inversión, consigue la tuya hoy mismo!</p>
+                <a href="#">Ver más <i class="fas fa-angle-double-right"></i></a>
+            </div>
+        </div>
+
+        <!-- Card Banner 1-->
+        <section class="cards-banner-one">
+            <div class="content">
+                <h2>¡Actualiza Tu PC al Máximo!</h2>
+                <p>Lleva el rendimiento de tu equipo a otro nivel con nuestro kit de actualización completo. ¡Compra ahora y transforma tu computadora!</p>
+                <a href="#" class="btn">Ver más<i class="fas fa-chevron-right"></i></a>
+            </div>
+        </section>
+
+        <!-- NEWS CARDS -->
+        <div class="news-cards">
+            <div>
+                <img src="img/disco-duro.jpg" alt="" />
+                <h3>Disco Duro (HDD)</h3>
+                <p>Amplía el almacenamiento de tu PC con un disco duro confiable y espacioso. ¡No te quedes sin espacio, llevalo ahora!</p>
+                <a href="#">Ver más <i class="fas fa-angle-double-right"></i></a>
+            </div>
+            <div>
+                <img src="img/tarjeta-grafica.jpg" alt="" />
+                <h3>Tarjeta Gráfica (GPU)</h3>
+                <p>Lleva tus juegos y gráficos a otro nivel con nuestra tarjeta gráfica de última generación. ¡No te quedes atrás!</p>
+                <a href="#">Ver más <i class="fas fa-angle-double-right"></i></a>
+            </div>
+            <div>
+                <img src="img/placa-base.jpg" alt="" />
+                <h3>Placa Base (Motherboard)</h3>
+                <p>Construye el corazón de tu PC con una placa base de confianza. ¡Conéctalo todo y empieza a disfrutar de un buen rendimiento!</p>
+                <a href="#">Ver más <i class="fas fa-angle-double-right"></i></a>
+            </div>
+            <div>
+                <img src="img/gabinete.jpg" alt="" />
+                <h3>Gabinete</h3>
+                <p>Dale a tu PC el hogar que merece con un gabinete elegante y bien ventilado. ¡Haz tu equipo destacar, adquiere el tuyo ya!</p>
+                <a href="#">Ver más <i class="fas fa-angle-double-right"></i></a>
+            </div>
+        </div>
+
+        <!-- third card -->
+        <section class="cards-banner-two">
+            <div class="content">
+                <h2>¡Estamos Aquí para Ayudarte!</h2>
+                <p>¿Tienes preguntas o necesitas asistencia? Contáctanos y nuestro equipo de soporte estará encantado de ayudarte. ¡Estamos a solo un clic de distancia!</p>
+                <a href="#" class="btn">¡Contactanos!<i class="fas fa-chevron-right"></i></a>
+            </div>
+        </section>
+
+        <!-- Follow -->
+        <section class="social">
+            <p>¡Síguenos!</p>
+            <div class="links">
+                <a href="https://facebook.com">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://linkedin.com">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- <script type="module" src="main.js"></script> -->
+</body>
+
+</html>
